@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<title>Enri teeb veebi haha</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script src="javascript/video.js" defer></script>
+</head>
+<body>
+	<main>
+
+		<header>
+			<h1>Veeb- ja meeidaelemendid</h1>
+			<p>See veebileht on loodud õppetöö raames!</p>
+			<p id="open_message">Praegu pole mingit sõnumit.</p>
+		</header>
+
+		<section id="videoplayer">
+			<h2>Subtiitritega video</h2>
+			<video id="movie" controls width="600">
+				<source src="http://greeny.cs.tlu.ee/~rinde/media/videos/zenit12s.mp4" type="video/mp4">
+				<track id="sub_en" kind="subtitles" label="Subtitels in English" srclang="en" src="http://greeny.cs.tlu.ee/~rinde/media/videos/subtitles/zenit12s_en.vtt">
+				<track id="sub_et" kind="subtitles" label="Eestikeelsed subtiitrid" srclang="et" src="http://greeny.cs.tlu.ee/~rinde/media/videos/subtitles/zenit12s_et.vtt">
+			</video>
+			<br>
+			<button id="subtitle_btn" type="button">Vaheta subtiitrite keel</button>
+			<p id="subtitle_place"></p>
+			
+			<h3>Filtrid</h3>
+			<label for="brightness_btn">Heledus: </label>
+			<input id="brightness_btn" type="range" min="0" max="1000" value="100">
+			<br>
+			<label for="contrast_btn">Kontrast: </label>
+			<input id="contrast_btn" type="range" min="0" max="1000" value="100">
+			<br>
+			<label for="saturation_btn">Värvi küllastus: </label>
+			<input id="saturation_btn" type="range" min="0" max="1000" value="100">
+			<br>
+			<label for="blur_btn">Hägusus: </label>
+			<input id="blur_btn" type="range" min="0" max="20" value="0">
+		</section>
+		<footer>
+			<p>Lehe lõpp! aka footer 😎</p>
+		</footer>
+	</main>
+</body>
+</html>

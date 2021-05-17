@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+/*viewport tõi uued mõõtühikud vw   1% viewport laiusest    vh    vmin   1% vaateava väiksemast servadst      vmax*/
+body {
+	background-color: #FAFAFA;
+	font-family: verdana, sans-serif;
+}
+
+main {
+	width: 95vw;
+	border: 1px solid black;
+}
+
+.grid_container {
+	display: grid;
+	border: 1px solid black;
+	width: 90vw;
+	height: 80vh;
+	grid-template-columns: 200px auto 10%;
+	grid-template-rows: 200px auto;
+	grid-auto-columns: 10%;
+}
+
+.item1 {
+	background-color:#FFAAAA;
+	grid-column: 3 / 5;
+	grid-row: 1 / 2;
+	 
+}
+
+.item2 {
+	background-color:#AAFFAA;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.item3 {
+	background-color:#AAAAFF;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+.item4 {
+	background-color:#FFFFAA;
+}
+
+

@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+/*viewport tõi uued mõõtühikud vw   1% viewport laiusest    vh    vmin   1% vaateava väiksemast servadst      vmax*/
+body {
+	background-color: #FAFAFA;
+	font-family: verdana, sans-serif;
+}
+
+section {
+	border: 2px solid #999999;
+	padding: 20px;
+}
+
+main {
+	width: 95vw;
+}
+
+img {
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+}
+
+.flex_container {
+	display: flex; /*inline-flex*/
+	flex-direction: row ; /*row row-reverse column column-reverse*/
+	justify-content: space-between; /*flex-start flex-end center space-between space-around*/
+	flex-wrap: wrap;
+}
+
+.flex_item {
+	flex-basis: 400px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	min-width: 200px;
+	max-width: 100%;
+	margin: 10px;
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.wider {
+	flex-basis: 800px;
+	min-width: 400px;
+	flex-grow: 2;
+	flex-shrink: 2;
+	
+	
+}
+
+
+
+
+

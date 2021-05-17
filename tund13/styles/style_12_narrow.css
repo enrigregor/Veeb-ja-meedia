@@ -1,0 +1,40 @@
+body {
+	background: none;
+	background-color: DimGray;
+	}
+
+main{
+	margin: 5px;
+}
+
+section{
+	background: none;
+	background-color: rgba(255,255,255,0.2);
+	background-origin: padding-box;
+	margin: 5px;
+	padding: 5px;
+	border: 2px dotted white;
+	overflow: auto;
+}
+nav{
+	background-color: hsl(64,1%,50%);
+	box-sizing: border-box; /*content-box*/
+	width: 100%;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+canvas {
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0px 0px 10px black; 
+	margin-bottom: 50px;
+}
+
+.tlu_logo {
+	float: left;
+	margin-right: 10px;
+	transform-origin: 0px top;/*top center bottom    left center right    0 - 100% */
+	transform: scale(1);
+}
